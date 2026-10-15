@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f3ed">
+  <meta name="description" content="피부 고민을 충분히 듣고, 현재 피부 상태에 맞는 진료 방향을 함께 살펴보는 [병원명] 피부과 안내 페이지입니다.">
+  <title>[병원명] 피부과 | 피부를 살피는 차분한 진료</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#243b35;--muted:#687a72;--sage:#dce6dd;--sage-dark:#385d50;--cream:#f4f3ed;--paper:#fbfaf6;--line:#d9dfd8;--serif:'Playfair Display',Georgia,serif;--sans:'Noto Sans KR',sans-serif;--max:1200px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:96px}body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-weight:400;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 64px));margin:auto}.eyebrow{font:600 11px 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#668276}.topline{height:34px;background:var(--ink);color:#e7ede7;font:500 10px 'DM Sans',var(--sans);letter-spacing:.1em;display:flex;align-items:center;justify-content:center}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(36,59,53,.1);position:relative;z-index:5}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:34px;height:34px;border:1px solid #849d8e;border-radius:50%;display:grid;place-items:center;font:500 19px var(--serif);color:#537364}.brand-name{font-size:15px;font-weight:600;letter-spacing:-.04em}.brand-name small{display:block;font:500 8px 'DM Sans',sans-serif;letter-spacing:.19em;color:#708179;margin-top:3px}.nav-links{display:flex;gap:38px;align-items:center;font-size:12px;color:#50645b}.nav-links a:hover{color:#1d3e33}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--ink);color:white;padding:14px 19px;font-size:11px;letter-spacing:.02em;transition:background .2s,transform .2s}.nav-cta:hover,.button:hover{background:#496d5d;transform:translateY(-1px)}.nav-cta .arrow,.button .arrow{font-size:15px;line-height:10px}.menu-toggle{display:none;border:0;background:none;color:var(--ink);font-size:23px;padding:8px}
+    .hero{min-height:660px;display:grid;grid-template-columns:1.03fr .97fr;align-items:center;padding:62px 0 76px;gap:7%}.hero-copy{padding:0 0 15px 3%}.hero .eyebrow{margin-bottom:24px}.hero h1{font-size:clamp(42px,5.5vw,72px);letter-spacing:-.075em;line-height:1.2;font-weight:400;margin:0;word-break:keep-all}.hero h1 em{font-family:var(--serif);font-weight:500;letter-spacing:-.055em;color:#6a8978}.hero-copy>p{font-size:14px;line-height:2;color:#60736a;max-width:420px;margin:26px 0 30px;word-break:keep-all}.hero-actions{display:flex;gap:20px;align-items:center}.text-link{font-size:11px;color:#496356;border-bottom:1px solid #9daea1;padding-bottom:6px}.hero-note{margin-top:55px;display:flex;gap:13px;align-items:center;font-size:10px;color:#829088;letter-spacing:.02em}.hero-note:before{content:'';width:30px;height:1px;background:#9cac9f}.hero-visual{height:510px;position:relative}.hero-photo{position:absolute;inset:0 7% 4% 4%;overflow:hidden;border-radius:48% 48% 5px 5px;background:#d8dfd6}.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:saturate(.75)}.hero-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,57,44,.03),rgba(27,57,44,.16))}.photo-caption{position:absolute;right:0;bottom:0;background:#e8ebe2;padding:18px 21px;min-width:165px}.photo-caption span{font:500 9px 'DM Sans',sans-serif;letter-spacing:.14em;color:#718477}.photo-caption strong{display:block;font-size:12px;font-weight:500;margin-top:7px}.orbit{position:absolute;width:86px;height:86px;border-radius:50%;left:-2%;bottom:16%;background:#d5e0d5;display:grid;place-items:center;color:#567465;font:500 27px var(--serif);box-shadow:0 4px 30px rgba(47,72,59,.08)}.hero-side-note{position:absolute;right:1%;top:9%;writing-mode:vertical-rl;font:500 9px 'DM Sans',sans-serif;letter-spacing:.18em;color:#84958a}
+    .intro{padding:100px 0 110px;background:#e6ebe3}.intro-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:11%;align-items:start}.intro-label{padding-top:9px}.intro-label .eyebrow{margin-bottom:16px}.intro-label p{font-size:11px;line-height:1.9;color:#7a8980;max-width:210px}.intro-copy h2{font-weight:400;letter-spacing:-.06em;font-size:clamp(28px,3.2vw,43px);line-height:1.5;word-break:keep-all;margin:0 0 20px}.intro-copy h2 span{color:#739080}.intro-copy>p{font-size:13px;line-height:2.05;color:#63746a;max-width:585px;word-break:keep-all;margin:0}.intro-sign{font:500 12px var(--serif);color:#617a6b;margin-top:32px;letter-spacing:.06em}
+    .care{padding:112px 0 120px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:44px}.section-head h2{font-size:clamp(29px,3.4vw,44px);font-weight:400;letter-spacing:-.065em;margin:13px 0 0}.section-head p{font-size:11px;line-height:1.9;color:#738279;max-width:270px;margin:0 0 4px;word-break:keep-all}.care-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.care-card{padding:28px 22px 30px 0;min-height:218px;border-right:1px solid var(--line);position:relative}.care-card:not(:first-child){padding-left:22px}.care-card:last-child{border-right:0}.care-no{font:500 10px 'DM Sans',sans-serif;color:#91a196;letter-spacing:.08em}.care-icon{font:400 29px var(--serif);color:#718d7d;display:block;margin:25px 0 12px}.care-card h3{font-size:15px;font-weight:500;letter-spacing:-.04em;margin:0 0 10px}.care-card p{font-size:11px;line-height:1.9;color:#78857d;margin:0;word-break:keep-all}.care-foot{font-size:10px;color:#89968d;margin:18px 0 0}
+    .approach{background:#344f45;color:#f5f4ed;padding:102px 0 106px}.approach .eyebrow{color:#b6c8b9}.approach-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:12%}.approach-intro h2{font-size:clamp(30px,3.5vw,45px);line-height:1.45;font-weight:300;letter-spacing:-.07em;word-break:keep-all;margin:20px 0 18px}.approach-intro p{font-size:11px;line-height:2;color:#c6d1c7;max-width:270px;word-break:keep-all}.steps{border-top:1px solid rgba(235,241,233,.26)}.step{display:grid;grid-template-columns:57px 1fr;gap:10px;padding:23px 0 24px;border-bottom:1px solid rgba(235,241,233,.26)}.step-no{font:500 11px 'DM Sans',sans-serif;color:#b0c5b7;padding-top:3px}.step h3{font-size:14px;font-weight:500;margin:0 0 7px}.step p{font-size:11px;color:#c3d0c5;line-height:1.85;margin:0;word-break:keep-all}
+    .visit{padding:108px 0 112px;background:var(--paper)}.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:11%;align-items:center}.visit-art{height:370px;position:relative;background:#e2e8df;overflow:hidden}.visit-art:before{content:'';position:absolute;width:350px;height:350px;border-radius:50%;background:#c4d3c5;left:-70px;top:100px}.visit-art:after{content:'';position:absolute;width:250px;height:250px;border:1px solid #8da492;border-radius:50%;right:-20px;top:-35px}.art-branch{position:absolute;z-index:1;left:37%;top:9%;width:2px;height:340px;background:#758d7c;transform:rotate(25deg);transform-origin:bottom}.leaf{position:absolute;z-index:1;width:66px;height:28px;border:1px solid #758d7c;border-radius:100% 0 100% 0;background:#d9e3d8;transform:rotate(-30deg)}.leaf.l1{left:42%;top:23%}.leaf.l2{left:24%;top:37%;transform:rotate(40deg)}.leaf.l3{left:46%;top:51%;transform:rotate(-30deg)}.leaf.l4{left:26%;top:64%;transform:rotate(43deg)}.art-index{position:absolute;z-index:2;right:22px;bottom:21px;font:500 10px 'DM Sans',sans-serif;letter-spacing:.16em;color:#60796a}.visit-copy .eyebrow{margin-bottom:15px}.visit-copy h2{font-size:clamp(29px,3.3vw,42px);font-weight:400;letter-spacing:-.065em;line-height:1.4;margin:0 0 18px}.visit-copy>p{font-size:12px;line-height:1.9;color:#748178;word-break:keep-all;margin:0 0 28px}.visit-info{border-top:1px solid var(--line)}.info-row{display:grid;grid-template-columns:78px 1fr;gap:10px;padding:14px 0;border-bottom:1px solid var(--line);font-size:11px}.info-row dt{color:#89968d}.info-row dd{margin:0;color:#43584d}.visit-cta{margin-top:24px}
+    .faq{padding:100px 0 112px}.faq-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:12%}.faq-title h2{font-size:clamp(30px,3vw,40px);font-weight:400;letter-spacing:-.06em;margin:12px 0}.faq-title p{font-size:11px;line-height:1.9;color:#78857d;max-width:220px}.faq-list{border-top:1px solid var(--line)}.faq-item{border-bottom:1px solid var(--line)}.faq-q{width:100%;text-align:left;border:0;background:none;color:var(--ink);padding:20px 4px;display:flex;justify-content:space-between;gap:14px;align-items:center;font-size:12px;cursor:pointer}.faq-q span:last-child{font:300 20px 'DM Sans',sans-serif;color:#809087;transition:transform .2s}.faq-answer{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s}.faq-answer>div{overflow:hidden}.faq-answer p{font-size:11px;line-height:1.9;color:#748178;margin:0;padding:0 28px 0 4px;word-break:keep-all}.faq-item.open .faq-answer{grid-template-rows:1fr}.faq-item.open .faq-answer p{padding-bottom:19px}.faq-item.open .faq-q span:last-child{transform:rotate(45deg)}
+    .final{background:#dce5dc;padding:73px 0}.final-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}.final h2{font-weight:400;letter-spacing:-.06em;font-size:clamp(24px,3vw,36px);margin:0 0 9px}.final p{font-size:11px;color:#6e7f74;margin:0}.footer{background:var(--ink);color:#d9e2d9;padding:39px 0 32px}.footer-top{display:flex;justify-content:space-between;gap:24px;align-items:start}.footer .brand-mark{border-color:#73887b;color:#ccdacd}.footer .brand-name small{color:#9bab9d}.footer-info{font-size:10px;line-height:2;color:#aebeb1}.footer-info p{margin:0}.footer-bottom{border-top:1px solid rgba(232,238,230,.16);margin-top:28px;padding-top:16px;display:flex;justify-content:space-between;font:9px 'DM Sans',sans-serif;letter-spacing:.05em;color:#99aa9c}.disclaimer{max-width:780px;font:9px/1.8 var(--sans);color:#8fa194;margin-top:10px}
+    @media(max-width:850px){.wrap{width:min(100% - 42px,var(--max))}.nav-links{gap:19px}.hero{min-height:570px;gap:4%;grid-template-columns:1fr .9fr}.hero-visual{height:430px}.hero h1{font-size:clamp(40px,6vw,58px)}.care-card{padding-right:13px}.care-card:not(:first-child){padding-left:13px}.approach-grid,.faq-grid{gap:7%}.visit-grid{gap:7%}}
+    @media(max-width:640px){.wrap{width:calc(100% - 38px)}.topline{height:31px;font-size:9px}.nav{height:66px}.nav-cta{padding:11px 12px;font-size:10px}.nav-links{display:none;position:absolute;top:65px;left:-19px;right:-19px;padding:17px 19px 20px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}.nav-links.show{display:flex}.menu-toggle{display:block}.nav-cta{margin-left:auto;margin-right:10px}.brand{gap:8px}.brand-mark{width:30px;height:30px}.brand-name{font-size:13px}.hero{display:flex;flex-direction:column;align-items:stretch;padding:54px 0 55px;gap:37px}.hero-copy{padding:0}.hero .eyebrow{margin-bottom:17px}.hero h1{font-size:clamp(42px,12vw,59px)}.hero-copy>p{font-size:12px;margin:18px 0 23px}.hero-note{margin-top:27px;font-size:9px}.hero-visual{height:min(105vw,420px);width:100%}.hero-photo{inset:0 6% 5% 7%}.orbit{width:68px;height:68px;font-size:22px}.photo-caption{padding:13px 15px;min-width:143px}.intro{padding:69px 0 73px}.intro-grid{grid-template-columns:1fr;gap:22px}.intro-label p{max-width:none}.intro-copy h2{font-size:28px}.intro-copy>p{font-size:12px}.care{padding:73px 0 79px}.section-head{display:block;margin-bottom:26px}.section-head p{margin-top:13px;max-width:340px}.section-head h2{font-size:32px}.care-grid{grid-template-columns:1fr 1fr}.care-card{min-height:200px;padding:20px 13px 21px 0;border-bottom:1px solid var(--line)}.care-card:not(:first-child){padding-left:13px}.care-card:nth-child(2){border-right:0}.care-card:nth-child(3),.care-card:nth-child(4){border-bottom:0}.care-icon{margin:18px 0 10px;font-size:25px}.care-card h3{font-size:13px}.care-card p{font-size:10px}.approach{padding:71px 0 75px}.approach-grid{grid-template-columns:1fr;gap:31px}.approach-intro h2{font-size:32px;margin:14px 0}.approach-intro p{max-width:none}.step{padding:18px 0}.visit{padding:72px 0 78px}.visit-grid{grid-template-columns:1fr;gap:29px}.visit-art{height:260px}.visit-copy h2{font-size:32px}.faq{padding:72px 0 78px}.faq-grid{grid-template-columns:1fr;gap:22px}.faq-title p{max-width:none}.faq-q{font-size:11px;padding:17px 2px}.final{padding:46px 0}.final-inner{align-items:flex-start;flex-direction:column}.final h2{font-size:26px}.footer-top{flex-direction:column}.footer-info{font-size:9px}.footer-bottom{flex-direction:column;gap:8px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="topline">SKIN CARE, WITH ATTENTION · 피부를 살피는 차분한 진료</div>
+  <header class="wrap nav">
+    <a class="brand" href="#home" aria-label="페이지 처음으로">
+      <span class="brand-mark" aria-hidden="true">결</span><span class="brand-name">[병원명]<small>DERMATOLOGY CLINIC</small></span>
+    </a>
+    <nav class="nav-links" id="navigation" aria-label="주요 메뉴">
+      <a href="#about">진료 철학</a><a href="#care">진료 분야</a><a href="#visit">내원 안내</a><a href="#faq">자주 묻는 질문</a>
+    </nav>
+    <a class="nav-cta" href="#visit">진료 안내 <span class="arrow" aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navigation">☰</button>
+  </header>
+  <main id="home">
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow">DERMATOLOGY · [지역]</div>
+        <h1 id="hero-title">피부의 오늘을<br>살피고, 내일을<br><em>함께 그립니다.</em></h1>
+        <p>피부 고민의 시작부터 일상의 변화까지. 현재 피부 상태와 생활 습관을 함께 살펴 진료 방향을 안내합니다.</p>
+        <div class="hero-actions"><a class="button" href="#visit">내원 안내 보기 <span class="arrow" aria-hidden="true">↗</span></a><a class="text-link" href="#care">진료 분야 살펴보기</a></div>
+        <div class="hero-note">처음 방문하시는 분을 위한 진료 안내</div>
+      </div>
+      <div class="hero-visual" aria-label="햇빛이 부드럽게 비치는 피부 진료 공간 이미지">
+        <div class="hero-photo"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1300&q=85" alt="부드러운 햇빛 아래 얼굴을 감싸 쥔 여성의 모습" fetchpriority="high"><div class="photo-caption"><span>CARE WITH ATTENTION</span><strong>한 사람의 피부에 집중합니다</strong></div></div>
+        <div class="orbit" aria-hidden="true">결</div><div class="hero-side-note">A CALM SPACE FOR YOUR SKIN</div>
+      </div>
+    </section>
+    <section class="intro" id="about">
+      <div class="wrap intro-grid">
+        <div class="intro-label"><div class="eyebrow">OUR APPROACH</div><p>피부를 이해하는 진료는<br>충분히 듣는 일에서 시작됩니다.</p></div>
+        <div class="intro-copy"><h2>같은 고민처럼 보여도<br><span>피부가 보내는 신호는 다릅니다.</span></h2><p>언제부터 어떤 변화가 있었는지, 평소 어떤 제품을 사용하는지부터 차근히 살펴봅니다. 충분한 상담과 진찰을 바탕으로 현재 상태에 맞는 진료 방법과 관리 방향을 안내하겠습니다.</p><div class="intro-sign">[병원명] 피부과</div></div>
+      </div>
+    </section>
+    <section class="care" id="care">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">SKIN CONCERNS</div><h2>어떤 고민이 있으신가요?</h2></div><p>불편한 점을 들려주세요. 피부 상태를 확인한 뒤 필요한 진료를 안내합니다.</p></div>
+        <div class="care-grid">
+          <article class="care-card"><span class="care-no">01 / TEXTURE</span><span class="care-icon" aria-hidden="true">◌</span><h3>여드름·피부결</h3><p>반복되는 트러블과 피부결 변화를 살펴봅니다.</p></article>
+          <article class="care-card"><span class="care-no">02 / TONE</span><span class="care-icon" aria-hidden="true">◒</span><h3>색소·칙칙함</h3><p>피부 톤과 색소 고민을 현재 상태에 맞춰 상담합니다.</p></article>
+          <article class="care-card"><span class="care-no">03 / SENSITIVITY</span><span class="care-icon" aria-hidden="true">⌁</span><h3>민감·건조함</h3><p>건조함, 가려움, 붉어짐 등 불편한 증상을 확인합니다.</p></article>
+          <article class="care-card"><span class="care-no">04 / AGING</span><span class="care-icon" aria-hidden="true">〰</span><h3>탄력·잔주름</h3><p>피부 변화와 원하는 관리 방향을 함께 살펴봅니다.</p></article>
+        </div>
+        <p class="care-foot">※ 실제 진료 여부와 방법은 의료진의 진찰 후 결정됩니다.</p>
+      </div>
+    </section>
+    <section class="approach">
+      <div class="wrap approach-grid">
+        <div class="approach-intro"><div class="eyebrow">YOUR VISIT</div><h2>서두르지 않고<br>피부의 이야기를 듣습니다.</h2><p>첫 방문부터 진료 계획을 이해하실 수 있도록, 상담과 안내 과정을 차분히 이어갑니다.</p></div>
+        <div class="steps">
+          <div class="step"><span class="step-no">01</span><div><h3>고민을 먼저 듣습니다</h3><p>불편한 증상, 시작 시점, 일상 속 관리 방법을 확인합니다.</p></div></div>
+          <div class="step"><span class="step-no">02</span><div><h3>현재 피부 상태를 살핍니다</h3><p>의료진이 피부 상태를 진찰하고 궁금한 점을 함께 확인합니다.</p></div></div>
+          <div class="step"><span class="step-no">03</span><div><h3>진료 방향을 안내합니다</h3><p>진찰 결과에 따라 가능한 진료 방법과 주의사항을 설명합니다.</p></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="visit" id="visit">
+      <div class="wrap visit-grid">
+        <div class="visit-art" role="img" aria-label="차분한 초록빛으로 표현한 식물 드로잉"><span class="art-branch"></span><i class="leaf l1"></i><i class="leaf l2"></i><i class="leaf l3"></i><i class="leaf l4"></i><span class="art-index">A PLACE TO PAUSE · 01</span></div>
+        <div class="visit-copy"><div class="eyebrow">VISIT US</div><h2>편안한 마음으로<br>방문해 주세요.</h2><p>아래 정보는 병원 운영 정보에 맞게 수정해 주세요. 오시는 길과 예약 방법을 한눈에 확인할 수 있습니다.</p>
+          <dl class="visit-info"><div class="info-row"><dt>주소</dt><dd>[도로명 주소를 입력해 주세요]</dd></div><div class="info-row"><dt>진료 시간</dt><dd>[요일별 진료 시간을 입력해 주세요]</dd></div><div class="info-row"><dt>예약 문의</dt><dd>[대표 전화번호를 입력해 주세요]</dd></div><div class="info-row"><dt>주차 안내</dt><dd>[주차 가능 여부를 입력해 주세요]</dd></div></dl>
+          <a class="button visit-cta" href="#faq">방문 전 자주 묻는 질문 <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="faq" id="faq">
+      <div class="wrap faq-grid">
+        <div class="faq-title"><div class="eyebrow">GOOD TO KNOW</div><h2>방문 전<br>확인해 주세요.</h2><p>첫 방문을 앞두고 궁금할 수 있는 내용을 정리했습니다.</p></div>
+        <div class="faq-list">
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>첫 진료 때 준비할 것이 있나요?</span><span aria-hidden="true">+</span></button><div class="faq-answer"><div><p>현재 불편한 증상과 시작 시점, 사용 중인 화장품이나 복용 중인 약이 있다면 진료 시 알려주세요. 이전 진료 기록이나 처방전이 있다면 함께 가져오셔도 좋습니다.</p></div></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>예약 없이 방문해도 되나요?</span><span aria-hidden="true">+</span></button><div class="faq-answer"><div><p>병원의 예약 및 접수 방식에 따라 달라질 수 있습니다. 방문 전 [대표 전화번호]로 운영 시간과 접수 가능 여부를 확인해 주세요.</p></div></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>진료 시간과 휴진일은 어디서 확인하나요?</span><span aria-hidden="true">+</span></button><div class="faq-answer"><div><p>페이지의 내원 안내에 최신 진료 시간과 휴진일을 기재해 주세요. 공휴일이나 임시 휴진 일정은 방문 전에 병원에 확인하시는 편이 좋습니다.</p></div></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>어떤 진료를 받을 수 있는지 미리 알 수 있나요?</span><span aria-hidden="true">+</span></button><div class="faq-answer"><div><p>진료 분야 안내는 참고용입니다. 실제 진료 가능 여부와 방법은 의료진의 진찰 및 병원 운영 정보에 따라 달라질 수 있습니다.</p></div></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="final"><div class="wrap final-inner"><div><h2>내 피부에 맞는 진료가 궁금하신가요?</h2><p>병원에 문의해 예약과 방문 방법을 확인해 주세요.</p></div><a class="button" href="#visit">진료·위치 안내 확인 <span class="arrow" aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="footer"><div class="wrap"><div class="footer-top"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">결</span><span class="brand-name">[병원명]<small>DERMATOLOGY CLINIC</small></span></a><div class="footer-info"><p>[병원명] · [대표자명] · [사업자등록번호]</p><p>[도로명 주소] · 대표전화 [전화번호]</p><p>진료시간 [진료시간 입력] · 휴진일 [휴진일 입력]</p></div></div><p class="disclaimer">본 페이지의 진료 분야와 안내 내용은 일반적인 정보이며, 개인별 진단이나 치료를 대신하지 않습니다. 구체적인 진료 방법은 의료진의 진찰과 상담을 통해 결정됩니다.</p><div class="footer-bottom"><span>© [병원명] DERMATOLOGY CLINIC</span><span>본 페이지의 대괄호 항목을 실제 병원 정보로 교체해 주세요.</span></div></div></footer>
+  <script>
+    const menuButton=document.querySelector('.menu-toggle');
+    const navigation=document.querySelector('.nav-links');
+    menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'메뉴 닫기':'메뉴 열기');navigation.classList.toggle('show',open)});
+    navigation.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navigation.classList.remove('show');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','메뉴 열기')}));
+    document.querySelectorAll('.faq-q').forEach(button=>button.addEventListener('click',()=>{const item=button.closest('.faq-item');const open=item.classList.toggle('open');button.setAttribute('aria-expanded',String(open))}));
+  </script>
+</body>
+</html>

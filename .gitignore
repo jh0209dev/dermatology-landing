@@ -1,0 +1,17 @@
+# Environment and secret configuration
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+
+# Dependencies and local environments
+node_modules/
+vendor/
+.venv/
+venv/
+
+# Local system/editor files
+.DS_Store
+.vscode/
